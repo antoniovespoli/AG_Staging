@@ -1,5 +1,49 @@
-<html>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Airglow - Home</title>
+    <link rel="stylesheet" href="ag-style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
 <body>
-Ciao
+    <div id="app"> 
+        <router-view></router-view>
+      <!--    
+        <homepage>  </homepage>
+    
+        <event-details-page v-bind:event_id="1">  </event-details-page>
+    -->
+    
+    </div>
+
+
+    <script>
+            // Initialize and add the map
+            function initMap() {
+              // The location of Uluru
+              var uluru = {lat: 46.06787, lng: 11.12108};
+              // The map, centered at Uluru
+              var map = new google.maps.Map(
+                  document.getElementById('map'), {zoom: 16, center: uluru});
+              // The marker, positioned at Uluru
+              var marker = new google.maps.Marker({position: uluru, map: map});
+            }
+                </script>
+                <!--Load the API from the specified URL
+                * The async attribute allows the browser to render the page while the API loads
+                * The key parameter will contain your own API key (which is not needed for this tutorial)
+                * The callback parameter executes the initMap() function
+                -->
+                <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBw-ZazXWad4kEd_S4UY2oLPp8Qo-6Rgs&callback=initMap">
+                </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router@3.0.6/dist/vue-router.js"></script>
+    <script src="home.js"></script>
+    <script src="vue-google-maps.js"></script>
 </body>
 </html>

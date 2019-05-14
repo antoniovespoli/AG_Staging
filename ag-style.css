@@ -1,0 +1,420 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+body {
+    background-color: #090612;
+    margin: 0 0 0 0;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 600pt;
+    margin-top: -16pt;
+    margin-left: -16pt;
+    margin-right: -16pt;
+    background: linear-gradient(12deg, #090612 60%, #176956 100%);
+    z-index: -1;
+}
+
+.homepage {
+    margin: 16pt 16pt 16pt 16pt;
+}
+
+.event-details-page {
+    margin: 0;
+}
+
+.logo-header {
+    width: 48px;
+    height: 43px;
+    margin-top: 16pt;
+    margin-left: 16pt;
+}
+
+.event-card {
+    width: 200pt;
+    margin: 16pt 16pt 32pt 16pt;
+    display: inline-block;
+}
+
+.events-list-container {
+    text-align: center;
+}
+
+.event-card-top {
+    margin: 0 0 0 0;
+    position: relative;
+}
+
+.date-preview {
+    position: absolute;
+    top: 22px;
+    left: 24px; 
+    width: 56pt;
+    height: 56pt;
+    background-color: #090612;
+    opacity: 0.8;
+    border-radius: 4pt;
+    color: #A7A0BB;
+    padding-top: 2pt;
+}
+
+.date-preview h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 28pt;
+    font-weight: 600;
+    line-height: 26pt;
+}
+
+.date-preview p {
+    margin: 0;
+    text-align: center;
+    font-size: 11pt;
+    font-weight: 300;
+}
+
+img.event-card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 15pt;
+}
+
+.overlay-event-details-header {
+    opacity: 50%;
+    background: linear-gradient(0deg, #090612 30%, #17695600 100%);
+    position: absolute;
+    width: 100%;
+    height: 300pt;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.main-container {
+    margin: auto;
+    margin-top: -300pt;
+    max-width: 800pt;
+    width: 60%;
+}
+
+.home-main-container {
+    margin: auto;
+    margin-top: 0;
+    max-width: 700pt;
+    width: 74%;
+}
+
+.event-details-header-title h3 {
+    margin-top: 200pt;
+    margin-bottom: 0;
+}
+
+.event-details-header-title h2 {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 8pt;
+    margin-bottom: 8pt;
+    color: white;
+}
+
+.event-details-header-title .event-place {
+    margin-top: 0;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.event-details-header-title .event-place h3 {
+    margin-top: 0;
+    margin-left: 8pt;
+    display: inline;
+}
+
+.event-details-header {
+    width: 100%;
+    height: 300pt;
+}
+
+.event-details-header-title {
+    position: relative;
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    overflow:hidden;
+}
+
+.event-details-header img {
+    width: 100%;
+    height: 300pt;
+    object-fit: cover;
+}
+
+.event-tag {
+    background-color: #A7A0BB;
+    padding: 0 0 0 0;
+    display: inline-block;
+    border-radius: 2pt;
+    margin-right: 8pt;
+    margin-top: 14pt;
+    float: left;
+}
+
+.event-tag p {
+    color: #090612;
+    font-size: 9pt;
+    margin: 1pt 6pt 1pt 6pt;
+    font-weight: 600;
+}
+
+.event-card h2 {
+    color: white;
+    margin-top: 10pt;
+    margin-left: 0pt;
+    font-size: 17pt;
+}
+
+.event-card h3 {
+    margin-left: 14pt;
+    margin-right: 20pt;
+    margin-top: 0;
+    margin-bottom: 0pt;
+}
+
+.event-card i.fas.fa-map-marker-alt {
+    color: #A7A0BB;
+    float: left;
+    display: inline-block;
+    margin-top: 1pt;
+}
+
+i.fas.fa-map-marker-alt {
+    color: #A7A0BB;
+    float: left;
+    display: inline-block;
+    margin-top: 1pt;
+}
+
+.event-place {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.paragraph {
+    float:left;
+    clear: both;
+    margin-top: 16pt;
+}
+
+.paragraph h3 {
+    margin: 0;
+}
+
+.paragraph p {
+    margin: 4pt 0 0 0;
+    color: white;
+}
+
+.event-details-body {
+    margin-top: 24pt;
+}
+
+.disco-card {
+    width: 100%;
+    float: left;
+    clear: both;
+    margin-top: 32pt;
+    background-color: #111017;
+    border-radius: 25pt;
+    padding-top: 27pt;
+    padding-bottom: 27pt;
+}
+
+.disco-card h2 {
+    margin-top: 16pt;
+    margin-left: 16pt;
+    margin-right: 16pt;
+    margin-bottom: 8pt;
+    color: white;
+    float:left;
+}
+
+.circle-tag {
+    width: 64pt;
+    height: 64pt;
+    border-radius: 32pt;
+    background-color: #A7A0BB;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 64pt;
+    margin-left: 16pt;
+}
+
+.circle-tag h2 {
+    color: #090612;
+    text-align: center;
+    margin: 0;
+    float: none;
+}
+
+.disco-card p {
+    margin: 16pt 16pt 0 16pt;
+    color: white;
+    float: left;
+    clear: both;
+}
+
+.disco-card .event-place h3 {
+    margin-left: 8pt;
+    display: inline;
+}
+
+.disco-card .event-place {
+    margin-top: 0;
+    margin-left: 16pt;
+    margin-right: 16pt;
+    float:left;
+    clear: both;
+}
+
+.disco-card .feature {
+    margin: 24pt 0 0 0;
+    float: left;
+    width: 33%;
+    text-align: center;
+}
+
+.disco-card .feature p {
+    text-align: center;
+    margin: 0;
+    float: none;
+    color: #A7A0BB;
+}
+
+.fa-car {
+    
+    margin: 8pt auto;
+    color: #A7A0BB;
+    font-size: 30pt;
+}
+
+.fa-smoking {
+    
+    margin: 8pt auto;
+    color: #A7A0BB;
+    font-size: 30pt;
+}
+
+.fa-tshirt {
+    
+    margin: 8pt auto;
+    color: #A7A0BB;
+    font-size: 30pt;
+}
+
+#map {
+    width: 100%;
+    height: 100pt;
+    border-radius: 25pt;
+    background-color: #A7A0BB;
+    float: left;
+    clear: both;
+    margin-top: 32pt;
+}
+
+.footer {
+    width: 100%;
+    height: 60pt;
+    background-color: #111017;
+    float: left;
+    clear: both;
+    margin-top: 32pt;
+}
+
+.footer p {
+    text-align: center;
+    color: #A7A0BB;
+}
+
+h1 {
+    font-size: 24pt;
+    text-align: left;
+    color: white;
+    font-weight: 500;
+    margin-left: 16pt;
+}
+
+h2 {
+    font-size: 24pt;
+    text-align: left;
+    color: #A7A0BB;
+    font-weight: 350;
+    margin-left: 16pt;
+    clear: both;
+}
+
+.homepage h2 {
+    font-size: 17pt;
+}
+
+h3 {
+    font-size: 12pt;
+    text-align: left;
+    color: #A7A0BB;
+    font-weight: 350;
+}
+
+@media only screen and (min-width: 672pt) {
+    .event-card {
+        float: left;
+    }
+
+    .circle-tag {
+        margin-left: 32pt;
+        margin-right: 32pt;
+    }
+
+    .disco-card h2 {
+        margin-left: 32pt;
+        margin-right: 32pt;
+    }
+
+    .circle-tag h2{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .disco-card .event-place {
+        margin-left: 32pt;
+        margin-right: 32pt;
+    }
+
+    .disco-card p {
+        margin: 16pt 32pt 0 32pt;
+    }
+}
+
+@media only screen and (max-width: 672pt) {
+    .home-main-container {
+        width: 100%;
+    }
+
+    .homepage {
+        margin: 0;
+    }
+
+    .overlay {
+        margin: 0;
+    }
+
+    .main-container {
+        width: 80%;
+    }
+
+    .disco-card .feature {
+        width: 50%;
+    }
+}
